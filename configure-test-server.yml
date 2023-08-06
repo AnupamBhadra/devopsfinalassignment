@@ -7,6 +7,8 @@
 
   - name: install docker
     command: sudo apt install -y docker.io
+    async: 60
+    poll: 60
 
   - name: start docker service
     command: sudo systemctl start docker
